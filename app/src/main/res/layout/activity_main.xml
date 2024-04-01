@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/tiledmedia"
+        android:contentDescription="@string/tiledmedia" />
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Up To 3 Keywords"
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="-15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/displayPhotosView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"/>
+
+</LinearLayout>
